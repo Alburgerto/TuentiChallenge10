@@ -23,24 +23,24 @@ std::string rps_match(const std::string& l_first, const std::string& l_second)
 	}
 }
 
-//int main() 
-//{
-//	std::ifstream input("submitInput.txt");
-//	std::ofstream output("testOutput.txt");
-//
-//	std::string line, first, second;
-//
-//	int caseNumber;
-//	input >> caseNumber;
-//	input.ignore()
-//	for (int i = 0; i < caseNumber; ++i)
-//	{
-//		std::getline(input, line);
-//		std::stringstream sstream(line);
-//		sstream >> first >> second;
-//
-//		output << "Case #" << i + 1 << ": " << rps_match(first, second) << std::endl;
-//	}
-//}
+int main() 
+{
+	std::ifstream input("submitInput.txt");
+	std::ofstream output("testOutput.txt");
+
+	std::string line, first, second;
+
+	int caseNumber;
+	input >> caseNumber;
+	input.ignore();
+	for (int i = 0; i < caseNumber; ++i)
+	{
+		std::getline(input, line);
+		std::stringstream sstream(line);
+		sstream >> first >> second;
+
+		output << "Case #" << i + 1 << ": " << rps_match(first, second) << std::endl;
+	}
+}
 
 
